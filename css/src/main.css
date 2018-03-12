@@ -1,0 +1,126 @@
+/* main.css */
+
+/* slide_banner_02.css */
+html, body{width:100%; height:100%; overflow: hidden; }
+#wrap{width:100%; height:100%; margin:auto;}
+/* = #headBox ================================ */
+#headBox{width:100%;  height:10%; max-height:80px; margin:auto; background-color:#fff; padding:1rem; box-sizing: border-box; position:relative;}
+#headBox>h1{width:100px; height:50px; background-image:url(../../img/logo/logo_b/logo.png); background-repeat: no-repeat; background-position:center; background-size: contain;}
+#headBox>h1>a{display:block; width:100%; height:100%;}
+
+.resume_btn{width:auto; height:auto; position:absolute; top: 50%; right: 0; margin-right:20px; z-index: 1000; margin-top:-22px;}
+.open_btn{width: 60px; height: 45px; position: relative; -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); -webkit-transition: .5s ease-in-out; -moz-transition: .5s ease-in-out; -o-transition: .5s ease-in-out; transition: .5s ease-in-out; cursor: pointer; background-color:inherit;}
+.open_btn span {display: block; position: absolute; height: 9px; width: 100%; margin-top:3px; background-color: #333; border-radius: 9px; opacity: 1; left: 0; -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); -webkit-transition: .25s ease-in-out; -moz-transition: .25s ease-in-out; -o-transition: .25s ease-in-out; transition: .25s ease-in-out;}
+
+.open_btn span:nth-child(1) {top: 0px; -webkit-transform-origin: left center; -moz-transform-origin: left center; -o-transform-origin: left center; transform-origin: left center;}
+
+.open_btn span:nth-child(2) {top: 18px; -webkit-transform-origin: left center; -moz-transform-origin: left center; -o-transform-origin: left center; transform-origin: left center;}
+
+.open_btn span:nth-child(3) {top: 36px; -webkit-transform-origin: left center; -moz-transform-origin: left center; -o-transform-origin: left center; transform-origin: left center;}
+
+.open_btn.active span:nth-child(1) {-webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); top: -3px; left: 8px;}
+
+.open_btn.active span:nth-child(2) {width: 0%; opacity: 0;}
+
+.open_btn.active span:nth-child(3) {-webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); top: 39px; left: 8px;}
+
+/* resume image */
+.resume_box{width: 100%; height: 100%; display:none;}
+.resume{background-image:url(../../img/resume/resume.png); background-repeat:no-repeat; background-position: center; background-size:contain;}
+
+/* = #bannerBox ================================ */
+#bannerBox{width:100%; height:90%; min-height:500px; max-height:850px; background-color:#ccc;}
+
+/* banner_wrap ================================ */
+.banner_wrap{width:calc(100% - 220px); height:100%; background-color:#aaa; position:relative; float:left;}
+.banner_wrap>ul{width:100%; height:100%; position:relative;}
+.banner_wrap>ul>li{width:100%; height:100%; background-repeat: no-repeat; background-position: center; background-size: cover; position:absolute; top:0; left:0;}
+.banner_wrap>ul>li>a{width:200px; height:auto; padding:0.7rem; background-color:#fff; /*box-shadow: 0.2rem 0.2rem 0 #333;*/ box-sizing:border-box; position:absolute; left:50%; bottom: 8rem; margin-left:-100px; text-align: center; font-weight: bold; font-size:1.2rem; color:#fff; text-transform: uppercase; background-color:#333; border-radius: 20px;}
+.banner_wrap>ul>li>a:hover,
+.banner_wrap>ul>li>a:focus,
+.banner_wrap>ul>li>a.focus{background-color:#fff; color:#333; text-decoration: underline;}
+  .banner_01{background-image:url("../../img/project_01_skiEvent/main_ski.jpg"); z-index:400;}
+  .banner_02{background-image:url("../../img/project_02_ikea/ikea_banner.jpg"); z-index:300;}
+  .banner_03{background-image:url("../../img/project_03_ashley/maxresdefault.jpg"); z-index:200;}
+  .banner_04{background-image:url("../../img/process/psocess_image.png"); z-index:100;}
+
+/* left, right button ================================ */
+.btn{width:100%; height:0; position:absolute; top:50%; margin-top:-50px; left:0; z-index: 900;}
+.btn>button{width:200px; height:100px; margin-top:-50px; background-color:transparent; font-size:3rem; transition:all 500ms ease-in-out;}
+.btn>.lbtn{float:left; border-radius: 0 3rem 3rem 0;}
+.btn>.rbtn{float:right; border-radius: 3rem 0 0 3rem;}
+.btn>.lbtn:hover,
+.btn>.lbtn:focus,
+.btn>.lbtn.focus{background-color:rgba(255,255,255,0.7); color:#333; font-size:5rem; text-indent: -2rem;}
+.btn>.rbtn:hover,
+.btn>.rbtn:focus,
+.btn>.rbtn.focus{background-color:rgba(255,255,255,0.7); color:#333; font-size:5rem; text-indent: 2rem;}
+
+/* indicator ================================ */
+.indicator{width: 220px; height:100%; padding:0.25rem; padding-top: 0; box-sizing:border-box;background-color:#fff; 
+  /*position:absolute; top:0; right:0; bottom:0; z-index: 1000; margin-top:80px; */ float: right;
+  }
+.indicator ul{width:100%; height:100%;}
+/*.indicator ul:after{content:" "; display:block; clear:both;}*/
+.indicator ul>li{width:100%; height:25%; transition:all 300ms ease; margin-top:0.25rem; margin-bottom:0.25rem; box-sizing: border-box;}
+.indicator ul>li:nth-of-type(1){margin-top:0;}
+.indicator ul>li:last-child{margin-bottom:0;}
+.indicator ul>li.focus{width:100%; background-color:transparent;}
+.indicator ul>li a{display:block; width:100%; height:100%; background-repeat: no-repeat;background-position:center; background-size:100% auto; position:relative;}
+.indicator ul>li:nth-of-type(1)>a{background-image:url(../../img/indi/ski.png); margin-top:0;}
+.indicator ul>li:nth-of-type(2)>a{background-image:url(../../img/indi/ikea.png);}
+.indicator ul>li:nth-of-type(3)>a{background-image:url(../../img/indi/ashley.png); margin-bottom:0.25rem;}
+.indicator ul>li:nth-of-type(4)>a{background-image:url(../../img/process/psocess_image.png); margin-bottom:0.25rem; background-size:cover;}
+.indicator ul>li a:hover,
+.indicator ul>li a:focus{background-color:transparent;}
+.indicator ul>li>a>span{display:block; width:100%; height:100%; position:absolute; top:0; left:0; z-index:100; background-color:rgba(255,255,255,0.3);}
+.indicator ul>li>a>span:hover{display:block; width:100%; height:100%;background-color:transparent;}
+.indicator ul>li>a>span.selector{display:none; z-index:-100;}
+
+.indicator ul>li>a>p{width:auto; height:100%; line-height:268px; color:#fff; font-weight: bold; font-size: 1.5rem; text-transform: uppercase; margin-left:1rem; text-shadow: 3px 3px 3px #555;}
+.indicator ul>li>a>p:hover{text-decoration:underline; color:#fff;}
+
+/* indicator page 표기형 */
+/*.indicator>p{position:absolute; top:0; right:2rem; margin-top:1rem; margin-left: -1rem; font-size:1.5rem;}
+.indicator .now{color:#fff;}
+.indicator .now:after{content:"/"; color:#333; margin-left:0.5rem;}
+.indicator .total{color:#555; margin-left:0.5rem;}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

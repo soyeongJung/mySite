@@ -1,0 +1,86 @@
+/* process.css */
+
+/* slide_banner_02.css */
+html, body{width:100%; height:100%; /*overflow-y: hidden; */}
+#wrap{width:100%; height:100%; margin:auto;}
+/* = #headBox ================================ */
+#headBox{width:100%; min-width:60rem; height:10%; max-height:80px; margin:auto; background-color:#fff; padding:1rem; box-sizing: border-box; position:relative;}
+#headBox>h1{width:100px; height:50px; background-image:url(../../img/logo/logo_b/logo.png); background-repeat: no-repeat; background-position:center; background-size: contain;}
+#headBox>h1>a{display:block; width:100%; height:100%;}
+
+.resume_btn{width:auto; height:auto; position:absolute; top: 50%; right: 0; margin-right:20px; z-index: 1000; margin-top:-22px;}
+.open_btn{width: 60px; height: 45px; position: relative; -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); -webkit-transition: .5s ease-in-out; -moz-transition: .5s ease-in-out; -o-transition: .5s ease-in-out; transition: .5s ease-in-out; cursor: pointer; background-color:inherit;}
+.open_btn span {display: block; position: absolute; height: 9px; width: 100%; margin-top:3px; background-color: #333; border-radius: 9px; opacity: 1; left: 0; -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); -webkit-transition: .25s ease-in-out; -moz-transition: .25s ease-in-out; -o-transition: .25s ease-in-out; transition: .25s ease-in-out;}
+
+.open_btn span:nth-child(1) {top: 0px; -webkit-transform-origin: left center; -moz-transform-origin: left center; -o-transform-origin: left center; transform-origin: left center;}
+
+.open_btn span:nth-child(2) {top: 18px; -webkit-transform-origin: left center; -moz-transform-origin: left center; -o-transform-origin: left center; transform-origin: left center;}
+
+.open_btn span:nth-child(3) {top: 36px; -webkit-transform-origin: left center; -moz-transform-origin: left center; -o-transform-origin: left center; transform-origin: left center;}
+
+.open_btn.active span:nth-child(1) {-webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); top: -3px; left: 8px;}
+
+.open_btn.active span:nth-child(2) {width: 0%; opacity: 0;}
+
+.open_btn.active span:nth-child(3) {-webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); top: 39px; left: 8px;}
+
+/* resume image */
+.resume_box{width: 100%; height: auto; background-image:url(../../img/resume/resume.png); box-sizing: border-box; padding: 0.2rem;/* transition:all 800ms ease;*/}
+
+/* = #footBox ================================ */
+#footBox{width:100%; height:100%; background-color:#ccc;}
+  #gnb{width:100%; height:100%;}
+  #gnb>ul{width:100%; height:100%;}
+  #gnb li{width:33.333333%; height:100%; float:left; position:relative; background-repeat: no-repeat; background-position:center; background-size: auto;}
+  #gnb li:nth-child(1){background-image:url(../../img/project_01_skiEvent/ski_image_02.jpg); background-position:left;}
+  #gnb li:nth-child(2){background-image:url(../../img/project_02_ikea/banner_02.jpg); background-size: cover;}
+  #gnb li:nth-child(3){background-image:url(../../img/project_03_ashley/ashley_store.jpg);}
+  #gnb a{width:100%; height:100%; display:block; text-align: center; line-height: 30rem; font-size:2rem; color:#fff; font-weight: bold; background-color:rgba(20,20,20,0.4); transition:all 300ms ease; position:absolute; right:0; left:0; text-transform: uppercase;}
+
+  #gnb a:hover{color:#333; font-size:3rem; width:130%; background-image:inherit; z-index:200; left:-15%; background-repeat: no-repeat;background-position:center; background-size: cover; text-shadow:3px 3px 3px #fff; }
+  #gnb a.focus:after{content:"방문하시겠습니까? \A test"; white-space: pre; display:block; width:80%; height:20%; min-height:50px; position:absolute; bottom:10%; left:10%; background-color:rgba(255,255,255,0.8); border-radius:3rem; text-align: center; z-index:200; line-height: 120%; font-size:1.2rem; color:#222; padding-top:3rem;}
+  #gnb a.focus{color:#333; font-size:3rem; background-color:inherit; z-index:200;}
+
+/* step_02 | step_03 */
+  #gnb li:first-child>a:hover{left: 0;}
+  #gnb li:last-child>a:hover{left: -30%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
