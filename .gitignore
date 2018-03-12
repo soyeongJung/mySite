@@ -1,0 +1,26 @@
+# 그래픽파일 전송 금지 (image)
+**/*.psd
+**/*.ai
+**/*.eps
+
+# node_modules폴더
+**/node_modules
+
+# 그래픽파일 중 마크다운파일은 제외한다.
+graphic/**/*.*
+!graphic/guide.md
+
+
+
+# DS_Store
+**/.DS_Store
+
+# notIgnore이라는 폴더 안에 있는 것은 올리지 않는것
+**/notIgnore
+**/not_ignore
+
+# 해당 폴더 안에 있는 psd 파일은 업로드가능
+!**/c_03_makeWeb/*.psd
+
+**/*.config
+
