@@ -83,7 +83,7 @@
 
   gnbLiA.parent().siblings('li').eq(0).children('a').on('mouseenter', function() {
     $(this).parent().css({zIndex:800});
-    $(this).parent().siblings().css({zIndex:400});
+    $(this).parent().siblings().css({zIndex:300});
     $(this).siblings('div').css({width:130+'%', zIndex:400, left:0});
   });
 
