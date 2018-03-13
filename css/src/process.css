@@ -1,7 +1,7 @@
 /* process.css */
 
 /* slide_banner_02.css */
-html, body{width:100%; height:100%; /*overflow-y: hidden; */}
+html, body{width:100%; height:100%; overflow-y: hidden; }
 #wrap{width:100%; height:100%; margin:auto;}
 /* = #headBox ================================ */
 #headBox{width:100%; min-width:60rem; height:10%; max-height:80px; margin:auto; background-color:#fff; padding:1rem; box-sizing: border-box; position:relative;}
@@ -25,7 +25,8 @@ html, body{width:100%; height:100%; /*overflow-y: hidden; */}
 .open_btn.active span:nth-child(3) {-webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); top: 39px; left: 8px;}
 
 /* resume image */
-.resume_box{width: 100%; height: auto; background-image:url(../../img/resume/resume.png); box-sizing: border-box; padding: 0.2rem;/* transition:all 800ms ease;*/}
+.resume_box{width: 100%; height: 100%; display:none;}
+.resume{background-image:url(../../img/resume/resume.png); background-repeat:no-repeat; background-position: center; background-size:contain;}
 
 /* = #footBox ================================ */
 #footBox{width:100%; height:100%; background-color:#ccc;}
@@ -35,11 +36,17 @@ html, body{width:100%; height:100%; /*overflow-y: hidden; */}
   #gnb li:nth-child(1){background-image:url(../../img/project_01_skiEvent/ski_image_02.jpg); background-position:left;}
   #gnb li:nth-child(2){background-image:url(../../img/project_02_ikea/banner_02.jpg); background-size: cover;}
   #gnb li:nth-child(3){background-image:url(../../img/project_03_ashley/ashley_store.jpg);}
-  #gnb a{width:100%; height:100%; display:block; text-align: center; line-height: 30rem; font-size:2rem; color:#fff; font-weight: bold; background-color:rgba(20,20,20,0.4); transition:all 300ms ease; position:absolute; right:0; left:0; text-transform: uppercase;}
+  #gnb li>a{width:100%; height:100%; display:block; text-align: center; line-height: 30rem; font-size:2rem; color:#fff; font-weight: bold; background-color:rgba(20,20,20,0.4); transition:all 300ms ease; position:absolute; right:0; left:0; text-transform: uppercase;}
 
-  #gnb a:hover{color:#333; font-size:3rem; width:130%; background-image:inherit; z-index:200; left:-15%; background-repeat: no-repeat;background-position:center; background-size: cover; text-shadow:3px 3px 3px #fff; }
-  #gnb a.focus:after{content:"방문하시겠습니까? \A test"; white-space: pre; display:block; width:80%; height:20%; min-height:50px; position:absolute; bottom:10%; left:10%; background-color:rgba(255,255,255,0.8); border-radius:3rem; text-align: center; z-index:200; line-height: 120%; font-size:1.2rem; color:#222; padding-top:3rem;}
-  #gnb a.focus{color:#333; font-size:3rem; background-color:inherit; z-index:200;}
+  #gnb li>a:hover{color:#333; font-size:3rem; width:130%; background-image:inherit; z-index:200; left:-15%; background-repeat: no-repeat;background-position:center; background-size: cover; text-shadow:3px 3px 3px #fff; }
+  #gnb li:nth-child(1)>a.focus:after{content:"DESIGN CONCET \A \A HANDY & NEATLY"; white-space: pre; display:block; width:80%; height:20%; min-height:50px; position:absolute; bottom:10%; left:10%; background-color:rgba(255,255,255,0.8); border-radius:3rem; text-align: center; z-index:200; line-height: 120%; font-size:1.2rem; color:#222; padding-top:3rem;}
+   #gnb li:nth-child(2)>a.focus:after{content:"DESIGN CONCET \A \A TRANDY & INTIMATE"; white-space: pre; display:block; width:80%; height:20%; min-height:50px; position:absolute; bottom:10%; left:10%; background-color:rgba(255,255,255,0.8); border-radius:3rem; text-align: center; z-index:200; line-height: 120%; font-size:1.2rem; color:#222; padding-top:3rem;}
+    #gnb li:nth-child(3)>a.focus:after{content:"DESIGN CONCET \A \A LYRICAL & CLASSICAL"; white-space: pre; display:block; width:80%; height:20%; min-height:50px; position:absolute; bottom:10%; left:10%; background-color:rgba(255,255,255,0.8); border-radius:3rem; text-align: center; z-index:200; line-height: 120%; font-size:1.2rem; color:#222; padding-top:3rem;}
+
+    #gnb>ul>li>.go_btn{width: 100%; height:60px; position:absolute; top:50%; background-color:rgba(255,255,255,0.5); z-index:300; margin-top:-30px; /*border:1px solid #333;*/}
+     #gnb>ul>li>.go_btn>a{display:block; width:100%; height:100%; background-color:transparent; color:#333; text-align: center; line-height: 60px; font-size:2rem; text-transform:uppercase; font-weight: bold;}
+
+  #gnb li>a.focus{color:#333; font-size:3rem; background-color:inherit; z-index:200;}
 
 /* step_02 | step_03 */
   #gnb li:first-child>a:hover{left: 0;}

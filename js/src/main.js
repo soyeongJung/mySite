@@ -113,7 +113,7 @@ bannerBox.find('button').on('focus', function() { stopSlide() });
 
 bannerBox.find('a').eq(-1).on('blur', function() { startSlide() });
 
-// footBox
+// resumeBtn
   var resumeBtn = $('.resume_btn');
   var openBtn = $('.open_btn');
   var resumeBox = $('.resume_box');
@@ -126,7 +126,7 @@ bannerBox.find('a').eq(-1).on('blur', function() { startSlide() });
   $('head').append('<style></style>');
   $('head>style').text('.resume_box{transform:translateX(' + bodyW + 'px)}');
 
-  resumeBox.css({ transition:'all ' + timed + 'ms ease' , width:bodyW, height:bodyH, position:'fixed', zIndex:2000, overflowY:'auto', top:'70px', left:0, backgroundColor:'#fff', display:'block'});
+  resumeBox.css({ transition:'all ' + timed/5 + 'ms ease' , width:bodyW, height:bodyH, position:'fixed', zIndex:2000, overflowY:'auto', top:'70px', left:0, backgroundColor:'#fff', display:'block'});
 
   var resumeBoxW = resumeBox.width();
 
@@ -141,22 +141,20 @@ bannerBox.find('a').eq(-1).on('blur', function() { startSlide() });
     // console.log(cnbtr);
     if(!cnbtr) {
       resumeBox.addClass('active');
-      // footBox.addClass('active');
       openBtn.addClass('active');
       resumeBox.css({transform:'translate(0)'});
       active();
     }else {
       resumeBox.removeClass('active');
-      // footBox.removeClass('active');
       openBtn.removeClass('active');
       resumeBox.css({transform:'translateX(' + bodyW + 'px)'});
     }
   }); // openBtn.on('click');
 
-
     $(window).on('resize',function(e) {
       location.reload();
     });
+    
 })(this.jQuery);
 
 
