@@ -48,7 +48,7 @@
   gnbLiA.on('focus', function(e) {
     e.preventDefault();
     $(this).addClass('focus');
-    $(this).parent().css({zIndex:800});
+    $(this).parent().css({zIndex:700});
     $(this).parent().siblings().css({zIndex:400});
     $(this).siblings('div').css({width:130+'%', zIndex:600, left:-15+'%'});
   });
@@ -56,15 +56,15 @@
   gnbLiA.parent().siblings('li').eq(0).children('a').on('focus', function(e) {
     e.preventDefault();
     $(this).addClass('focus');
-    $(this).parent().css({zIndex:800});
-    $(this).parent().siblings().css({zIndex:400});
+    $(this).parent().css({zIndex:700});
+    $(this).parent().siblings().css({zIndex:300});
     $(this).siblings('div').css({width:130+'%', zIndex:500, left:0});
   });
 
   gnbLiA.parent().siblings('li').eq(2).children('a').on('focus', function(e) {
     e.preventDefault();
     $(this).addClass('focus');
-    $(this).parent().css({zIndex:800});
+    $(this).parent().css({zIndex:700});
     $(this).parent().siblings().css({zIndex:400});
     $(this).siblings('div').css({width:130+'%', zIndex:700, left:-30+'%'});
   });
@@ -76,19 +76,19 @@
   });  // bulr : 포커스가 없는것
 
   gnbLiA.on('mouseenter', function() {
-    $(this).parent().css({zIndex:800});
+    $(this).parent().css({zIndex:700});
     $(this).parent().siblings().css({zIndex:400});
     $(this).siblings('div').css({width:130+'%', zIndex:500, left:-15+'%'});
   });
 
   gnbLiA.parent().siblings('li').eq(0).children('a').on('mouseenter', function() {
-    $(this).parent().css({zIndex:800});
+    $(this).parent().css({zIndex:700});
     $(this).parent().siblings().css({zIndex:300});
     $(this).siblings('div').css({width:130+'%', zIndex:400, left:0});
   });
 
   gnbLiA.parent().siblings('li').eq(2).children('a').on('mouseenter', function() {
-    $(this).parent().css({zIndex:800});
+    $(this).parent().css({zIndex:700});
     $(this).parent().siblings().css({zIndex:400});
     $(this).siblings('div').css({width:130+'%', zIndex:600, left:-30+'%'});
   });
