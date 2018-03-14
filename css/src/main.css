@@ -10,19 +10,19 @@ html, body{width:100%; height:100%; overflow: hidden; }
 
 .resume_btn{width:auto; height:auto; position:absolute; top: 50%; right: 0; margin-right:20px; z-index: 1000; margin-top:-22px;}
 .open_btn{width: 60px; height: 45px; position: relative; -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); -webkit-transition: .5s ease-in-out; -moz-transition: .5s ease-in-out; -o-transition: .5s ease-in-out; transition: .5s ease-in-out; cursor: pointer; background-color:inherit;}
-.open_btn span {display: block; position: absolute; height: 9px; width: 100%; margin-top:3px; background-color: #333; border-radius: 9px; opacity: 1; left: 0; -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); -webkit-transition: .25s ease-in-out; -moz-transition: .25s ease-in-out; -o-transition: .25s ease-in-out; transition: .25s ease-in-out;}
+.open_btn span {display: block; position: absolute; height: 9px; width: 56px; /*margin-top:3px; */background-color: #333; border-radius: 9px; opacity: 1; left: 0; /*-webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -o-transform: rotate(90deg); transform: rotate(90deg);*/ -webkit-transition: .25s ease-in-out; -moz-transition: .25s ease-in-out; -o-transition: .25s ease-in-out; transition: .25s ease-in-out;}
 
-.open_btn span:nth-child(1) {top: 0px; -webkit-transform-origin: left center; -moz-transform-origin: left center; -o-transform-origin: left center; transform-origin: left center;}
+.open_btn span:nth-child(1) {height: 9px; width: 45px; top: -3px; left:13.454545px; -webkit-transform-origin: left center; -moz-transform-origin: left center; -o-transform-origin: left center; transform-origin: left center; -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -o-transform: rotate(90deg); transform: rotate(90deg);}
 
-.open_btn span:nth-child(2) {top: 18px; -webkit-transform-origin: left center; -moz-transform-origin: left center; -o-transform-origin: left center; transform-origin: left center;}
+.open_btn span:nth-child(2) {top: -1px; left:11px;-webkit-transform-origin: left center; -moz-transform-origin: left center; -o-transform-origin: left center; transform-origin: left center; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg);}
 
-.open_btn span:nth-child(3) {top: 36px; -webkit-transform-origin: left center; -moz-transform-origin: left center; -o-transform-origin: left center; transform-origin: left center;}
+.open_btn span:nth-child(3) {height: 9px; width: 45px; top: 0px; right:0; -webkit-transform-origin: right top; -moz-transform-origin: right top; -o-transform-origin: right top; transform-origin: right top; -webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -o-transform: rotate(-90deg); transform: rotate(-90deg);}
 
-.open_btn.active span:nth-child(1) {-webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); top: -3px; left: 8px;}
+.open_btn.active span:nth-child(1) {width:100%; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); top: 0; left: 10px;}
 
 .open_btn.active span:nth-child(2) {width: 0%; opacity: 0;}
 
-.open_btn.active span:nth-child(3) {-webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); top: 39px; left: 8px;}
+.open_btn.active span:nth-child(3) {width:100%; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); top: 1px; left:-10px;}
 
 /* resume image */
 .resume_box{width: 100%; height: 100%; display:none;}

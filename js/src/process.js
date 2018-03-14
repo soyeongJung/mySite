@@ -16,7 +16,7 @@
   $('head').append('<style></style>');
   $('head>style').text('.resume_box{transform:translateX(' + bodyW + 'px)}');
 
-  resumeBox.css({ transition:'all ' + timed/5 + 'ms ease' , width:bodyW, height:bodyH, position:'fixed', zIndex:2000, overflowY:'auto', top:'70px', left:0, backgroundColor:'#fff', display:'block'});
+  resumeBox.css({ transition:'all ' + timed/3 + 'ms ease' , width:bodyW, height:bodyH, position:'fixed', zIndex:2000, overflowY:'auto', top:'70px', left:0, backgroundColor:'#fff', display:'block'});
 
   var resumeBoxW = resumeBox.width();
 
